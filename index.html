@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0f5f9a">
+<title>Box Auto · Via Bassa 122</title>
+<style>
+:root{--bg:#eef6fb;--card:#fff;--ink:#17324a;--muted:#6b7f90;--blue:#0f5f9a;--blue2:#dceef9;--green:#198754;--amber:#b7791f;--line:#d9e6ef}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:linear-gradient(180deg,#eaf5fb 0,#f7fbfd 42%,#fff 100%);color:var(--ink)}
+.wrap{max-width:760px;margin:auto;padding:18px 14px 42px}
+.hero{background:linear-gradient(135deg,#0f5f9a,#2786c2);color:#fff;border-radius:22px;padding:22px;box-shadow:0 12px 30px rgba(15,95,154,.2)}
+.kicker{font-size:12px;letter-spacing:.09em;text-transform:uppercase;opacity:.8}
+h1{font-size:30px;line-height:1.05;margin:7px 0 8px}
+.sub{opacity:.9;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.stat{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:12px}
+.stat b{display:block;font-size:20px;margin-top:4px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:14px;box-shadow:0 6px 18px rgba(31,61,86,.06)}
+.card h2{font-size:18px;margin:0 0 12px}
+.notice{border-left:5px solid var(--amber);background:#fff9ec}
+.ok{border-left:5px solid var(--green);background:#f1fbf5}
+.rate{display:flex;gap:12px;align-items:center;padding:12px 0;border-top:1px solid #edf2f6}
+.rate:first-of-type{border-top:0}
+.badge{min-width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#eaf7ef;color:var(--green);font-weight:800}
+.rate .main{flex:1}
+.rate .title{font-weight:700}
+.small{font-size:13px;color:var(--muted);line-height:1.45}
+.amount{font-weight:800;white-space:nowrap}
+.pill{display:inline-block;padding:5px 9px;border-radius:999px;background:var(--blue2);color:var(--blue);font-size:12px;font-weight:700;margin:2px 5px 2px 0}
+hr{border:0;border-top:1px solid var(--line);margin:16px 0}
+.footer{text-align:center;color:var(--muted);font-size:12px;margin-top:22px}
+a{color:var(--blue)}
+@media(max-width:540px){.grid{grid-template-columns:1fr}.stat{display:flex;justify-content:space-between;align-items:center}.stat b{margin:0}.hero{padding:19px}.wrap{padding:12px 10px 32px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<section class="hero">
+  <div class="kicker">Registro personale</div>
+  <h1>Box Auto</h1>
+  <div class="sub">Via Bassa 122 · Marina di Carrara · Unità 6</div>
+  <div class="grid">
+    <div class="stat"><span>Piano ordinario 2026</span><b>192,45 €</b></div>
+    <div class="stat"><span>Versato</span><b>192,45 €</b></div>
+    <div class="stat"><span>Residuo</span><b>0,00 €</b></div>
+  </div>
+</section>
+
+<section class="card ok">
+  <h2>Situazione rate</h2>
+  <div><strong>Tutte le rate ordinarie 2026 risultano coperte.</strong></div>
+  <div class="small">Preventivo 193,82 € meno credito precedente 1,37 €. Nessuna nuova rata comunicata al momento.</div>
+</section>
+
+<section class="card notice">
+  <h2>Aggiornamento del 5 ottobre 2026</h2>
+  <div class="pill">Assemblea straordinaria</div>
+  <div class="pill">15 ottobre 2026 · 17:30</div>
+  <p><strong>Seconda convocazione</strong> presso lo studio dell’amministratore, Via Capitan Fiorillo 9/Bis, Marina di Carrara.</p>
+  <div class="small">Ordine del giorno: capitolato aggiornato del Geom. Alessandro Lazzini; esame preventivi e assegnazione lavori con impegno e riparto di spesa; incarichi professionali e relativi compensi; linea di distribuzione perimetrale dell’acqua ai box; varie ed eventuali.</div>
+  <hr>
+  <div><strong>Stato:</strong> in attesa delle deliberazioni dell’assemblea e dell’eventuale nuovo riparto spese.</div>
+</section>
+
+<section class="card">
+  <h2>Le quattro rate 2026</h2>
+  <div class="rate"><div class="badge">✓</div><div class="main"><div class="title">1ª rata · 10 gennaio 2026</div><div class="small">Già ridotta del credito precedente di 1,37 €</div></div><div class="amount">45,45 €</div></div>
+  <div class="rate"><div class="badge">✓</div><div class="main"><div class="title">2ª rata · 10 aprile 2026</div><div class="small">Quota ordinaria trimestrale</div></div><div class="amount">49,00 €</div></div>
+  <div class="rate"><div class="badge">✓</div><div class="main"><div class="title">3ª rata · 10 luglio 2026</div><div class="small">Quota ordinaria trimestrale</div></div><div class="amount">49,00 €</div></div>
+  <div class="rate"><div class="badge">✓</div><div class="main"><div class="title">4ª rata · 10 ottobre 2026</div><div class="small">Quota ordinaria trimestrale</div></div><div class="amount">49,00 €</div></div>
+</section>
+
+<section class="card">
+  <h2>Versamenti registrati</h2>
+  <p><strong>31 agosto 2026 · Piano ordinario 2026</strong><br><span class="small">Pagamento comunicato da Antonio: importo corrispondente all’intero piano ordinario 2026, comprensivo del credito precedente.</span></p>
+  <div class="amount">192,45 €</div>
+  <hr>
+  <p><strong>25 novembre 2024 · Lavori impermeabilizzazione copertura</strong><br><span class="small">Registrazione amministratore: 26/11/2024. Gestione straordinaria precedente, esclusa dal riepilogo ordinario 2026.</span></p>
+  <div class="amount">934,57 €</div>
+</section>
+
+<section class="card">
+  <h2>Lavori facciata · simulazione</h2>
+  <p>Quota ipotizzata per il box: <strong>1.777,22 €</strong>.</p>
+  <div class="small">Importo non definitivo e non incluso nel residuo. I costi effettivi dipenderanno dalle decisioni dell’assemblea e dal successivo riparto delle spese.</div>
+</section>
+
+<section class="card">
+  <h2>Riferimenti</h2>
+  <div class="small">Amministratore: Giuliano Orlandi · Condominio Via Bassa 122 · Registro separato dall’abitazione principale.</div>
+</section>
+
+<div class="footer">Dati verificati e aggiornati al 5 ottobre 2026</div>
+</main>
+</body>
+</html>
