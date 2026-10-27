@@ -25,7 +25,7 @@ h1{font-size:30px;line-height:1.05;margin:7px 0 8px}
 .ok{border-left:5px solid var(--green);background:#f1fbf5}
 .rate{display:flex;gap:12px;align-items:center;padding:12px 0;border-top:1px solid #edf2f6}
 .rate:first-of-type{border-top:0}
-.badge{min-width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#eaf7ef;color:var(--green);font-weight:800}
+.badge{min-width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#eaf7ef;color:var(--green);font-weight:800}.pending{background:#fff4dc;color:#9a6500}
 .rate .main{flex:1}
 .rate .title{font-weight:700}
 .small{font-size:13px;color:var(--muted);line-height:1.45}
@@ -51,22 +51,20 @@ a{color:var(--blue)}
 </section>
 
 <section class="card ok">
-  <h2>Situazione rate</h2>
-  <div><strong>Tutte le rate ordinarie 2026 risultano coperte.</strong></div>
-  <div class="small">Preventivo 193,82 € meno credito precedente 1,37 €. Le nuove spese straordinarie per i lavori di facciata sono state deliberate, ma nel verbale del 15 ottobre non risultano ancora rate con importi e scadenze precise per la tua unità.</div>
+  <h2>Situazione pagamenti</h2>
+  <div><strong>Gestione ordinaria 2026: completamente pagata.</strong></div>
+  <div class="small">Residuo ordinario: 0,00 €. È stato invece emesso il nuovo piano rate della Gestione Straordinaria Facciata 2026/2027 per la tua unità 6.</div>
 </section>
 
 <section class="card notice">
-  <h2>Verbale assemblea · 15 ottobre 2026</h2>
-  <div class="pill">Lavori assegnati</div>
-  <div class="pill">Edilcittà</div>
-  <p><strong>L’assemblea ha approvato il capitolato revisionato del Geom. Alessandro Lazzini e ha assegnato i lavori alla ditta Edilcittà.</strong></p>
-  <div class="small">La ditta ha accettato uno sconto del 3% sui prezzi evidenziati. La spesa deliberata per i lavori è pari a <strong>86.546,28 € + IVA</strong>. La contabilità sarà revisionata a fine lavori in base alle quantità effettivamente eseguite e accettate in contraddittorio tra impresa e Direzione Lavori.</div>
+  <h2>Aggiornamento del 27 ottobre 2026</h2>
+  <div class="pill">Lavori in partenza</div>
+  <div class="pill">Nuovo piano rate</div>
+  <p><strong>L’amministratore comunica che i lavori inizieranno nei prossimi giorni.</strong></p>
+  <div class="small">Le rate sono state impostate per consentire di portare in detrazione la quota più ampia possibile nell’anno 2026. Se l’avanzamento dei lavori risultasse più lento del previsto, alcune scadenze potranno essere riviste; fino a eventuale nuova comunicazione, le date indicate devono comunque essere rispettate.</div>
   <hr>
-  <div class="small"><strong>Riparto:</strong> i lavori sono ripartiti secondo la tabella millesimale di proprietà, salvo alcune lavorazioni specifiche relative ai balconi e ai corrimani ad uso esclusivo. Antonio Mauceri risulta unità 6 con <strong>28 millesimi</strong> ed era rappresentato per delega da Carlo Fanti.</div>
-  <div class="small" style="margin-top:8px"><strong>Quota teorica di base sui soli lavori comuni:</strong> circa <strong>2.423,30 € + IVA</strong>, prima di eventuali rettifiche per voci attribuite diversamente e prima dei compensi professionali.</div>
-  <hr>
-  <div class="small"><strong>Tempi e versamenti:</strong> i lavori dovranno iniziare entro 20 giorni. I versamenti condominiali saranno dilazionati secondo lo stato di avanzamento dei lavori, privilegiando il pagamento della quota maggiore possibile entro il 30 dicembre 2026.</div>
+  <div><strong>Totale dovuto da Antonio Mauceri · unità 6:</strong> 3.296,32 €</div>
+  <div class="small" style="margin-top:8px">Composizione del preventivo personale: <strong>3.024,56 €</strong> per lavori generali + <strong>271,76 €</strong> per la nuova linea acqua dei box.</div>
 </section>
 
 <section class="card">
@@ -87,6 +85,17 @@ a{color:var(--blue)}
 </section>
 
 <section class="card">
+  <h2>Nuove rate straordinarie</h2>
+  <div class="rate"><div class="badge pending">1</div><div class="main"><div class="title">30 ottobre 2026</div><div class="small">1ª rata · 25%</div></div><div class="amount">824,32 €</div></div>
+  <div class="rate"><div class="badge pending">2</div><div class="main"><div class="title">30 novembre 2026</div><div class="small">2ª rata · 25%</div></div><div class="amount">824,00 €</div></div>
+  <div class="rate"><div class="badge pending">3</div><div class="main"><div class="title">30 dicembre 2026</div><div class="small">3ª rata · 20%</div></div><div class="amount">659,00 €</div></div>
+  <div class="rate"><div class="badge pending">4</div><div class="main"><div class="title">30 gennaio 2027</div><div class="small">4ª rata · 20%</div></div><div class="amount">659,00 €</div></div>
+  <div class="rate"><div class="badge pending">5</div><div class="main"><div class="title">28 febbraio 2027</div><div class="small">5ª rata · 10%</div></div><div class="amount">330,00 €</div></div>
+  <hr>
+  <div><strong>Totale:</strong> 3.296,32 €</div>
+</section>
+
+<section class="card">
   <h2>Versamenti registrati</h2>
   <p><strong>31 agosto 2026 · Piano ordinario 2026</strong><br><span class="small">Pagamento comunicato da Antonio: importo corrispondente all’intero piano ordinario 2026, comprensivo del credito precedente.</span></p>
   <div class="amount">192,45 €</div>
@@ -96,9 +105,11 @@ a{color:var(--blue)}
 </section>
 
 <section class="card">
-  <h2>Lavori facciata · deliberati</h2>
-  <p>Importo lavori assegnati: <strong>86.546,28 € + IVA</strong>.</p>
-  <div class="small">La precedente simulazione di 1.777,22 € per il tuo box non è più il dato di riferimento. Il riparto definitivo dipenderà dalla contabilità effettiva dei lavori, dalle voci attribuite con criteri diversi dai millesimi e dai compensi professionali deliberati.</div>
+  <h2>Gestione straordinaria facciata 2026/2027</h2>
+  <p>Totale preventivo dell’intera gestione condominiale: <strong>114.839,90 €</strong>.</p>
+  <div class="small">Il rendiconto comprende 108.019,90 € di spese generali, 3.520,00 € riferiti ai proprietari degli appartamenti per la pitturazione dei parapetti interni e 3.300,00 € per la nuova linea acqua dei box.</div>
+  <hr>
+  <div class="small"><strong>Principali voci generali:</strong> lavori 86.546,28 €, IVA lavori 8.654,62 €, Direzione Lavori/Sicurezza 7.000,00 €, oneri e IVA Direzione Lavori/Sicurezza 1.967,00 €, Amministrazione Straordinaria 4.187,00 €, lavori aggiuntivi/imprevisti 5.500,00 €, comunicazione A.D.E. 565,00 €.</div>
 </section>
 
 <section class="card">
@@ -106,7 +117,7 @@ a{color:var(--blue)}
   <div class="small">Amministratore: Giuliano Orlandi · Condominio Via Bassa 122 · Registro separato dall’abitazione principale.</div>
 </section>
 
-<div class="footer">Dati verificati e aggiornati al 17 ottobre 2026</div>
+<div class="footer">Dati verificati e aggiornati al 27 ottobre 2026</div>
 </main>
 </body>
 </html>
